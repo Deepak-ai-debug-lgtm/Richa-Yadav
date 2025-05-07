@@ -4,7 +4,6 @@ body {
   background: radial-gradient(circle at top, #0f0f0f 0%, #000000 100%);
   color: #0ff;
   overflow-x: hidden;
-  perspective: 1000px;
 }
 
 header {
@@ -13,23 +12,12 @@ header {
   background: rgba(0, 255, 255, 0.1);
   border-bottom: 2px solid #0ff;
   box-shadow: 0 0 20px #0ff;
-  transform: rotateX(0deg);
-  animation: headerFloat 5s infinite ease-in-out;
 }
 
 header h1 {
   font-size: 3rem;
   color: #0ff;
   text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-}
-
-@keyframes headerFloat {
-  0%, 100% {
-    transform: rotateX(0deg);
-  }
-  50% {
-    transform: rotateX(10deg);
-  }
 }
 
 .hero {
@@ -39,17 +27,6 @@ header h1 {
   justify-content: center;
   padding: 4rem 2rem;
   background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
-  transform-style: preserve-3d;
-  animation: heroPop 6s infinite ease-in-out;
-}
-
-@keyframes heroPop {
-  0%, 100% {
-    transform: translateZ(0px);
-  }
-  50% {
-    transform: translateZ(30px);
-  }
 }
 
 .hero img {
@@ -57,23 +34,13 @@ header h1 {
   border-radius: 50%;
   box-shadow: 0 0 30px #0ff;
   margin-top: 2rem;
-  transform: rotateY(0deg);
-  animation: spinY 10s linear infinite;
-}
-
-@keyframes spinY {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
 }
 
 .hero h2 {
   font-size: 2rem;
   color: #ff0;
   text-shadow: 0 0 10px #ff0;
+  text-align: center;
 }
 
 .cta-button {
